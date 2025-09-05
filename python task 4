@@ -1,0 +1,111 @@
+
+# Q40 Adds numbers until user enters 0 then print sum
+total = 0
+num = float(input("Enter a numbers: "))
+total += num
+while num !=0:    
+    num = float(input("Enter a number: "))
+    total += num
+print(total)
+
+# Q41 
+total = 0 
+while True:
+    val = input("Enter a number (or type 'stop' to finish): ")
+
+    if val.lower() == "stop":
+        break
+    else:
+        total += int(val)
+
+print("Total Sum =", total)
+
+# Q42
+lst=[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+for i in lst:
+    for el in i:
+        print(el)
+
+# Q43
+tup=(1,2,4,3,5)
+tup1=sorted(tup)
+print(tup1)
+
+# Q44
+dic={'harry' :81,
+     'tayyab':61,
+     'hassan':87
+    }
+for i in dic:
+    val=dic.values()
+print(i,min(val))
+
+
+# Q45
+var1= input(str("enter the string :"))
+V=0
+for i in var1:
+    
+    if i in ('AEIOUaeiou'):
+        V +=1
+
+print(f'there is vovels in the string',{V} )
+
+# Q46
+lst=[1, 2, 3, 4, 5]
+dic={}
+dic1={num: num**2 for num in lst}
+print(dic1)
+
+# Q47
+tup=(1,2,3,4,5,6,7)
+list1=list(tup)
+print(list1)
+tup1=tuple(list1)
+print(tup1)
+
+# Q48
+dic={"a": 10, "b": 20, "c": 10, "d": 30}
+print(dic.values())
+set1=set(dic.values())
+print(set1)
+
+# Q49
+str = "PYTHON"
+reverse = ""
+for i in str:
+    reverse=i + reverse
+print(reverse)
+
+# 50
+secert_num=5
+while True:
+    num1= float(input("enter the string :"))
+    if num1 < secert_num
+        print("Too low,try again")
+    elif (num1 > secert_num):
+        print("too high,try again")
+    else:
+        print("congratulations you guess the number")
+    break
+ALL 50 QUESTION PART 2 
+# Q1 sum of  two numbers
+num1=float(input("enter number:"))
+num2=float(input("enter number:"))
+print(num1+num2)
+
+# Q2 type convert float to int
+a=5.5
+b=int(a)
+print(b)
+
+# Q3 taking input from user and find length
+name=("enter name")
+print(len(name))
+
+# Q4 check number is even or odd
+num=float(input("enter number:"))
+if(num%2==0):
+    print("EVEN")
+else:
+    print("ODD")
